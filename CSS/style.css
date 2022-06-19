@@ -308,18 +308,19 @@ textarea {
     text-decoration: none;
 }
 
-.social-media-list {
-    position: relative;
-    font-size: 22px;
+/*#contact-icon {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
     text-align: center;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-}
- 
+    text-decoration: none;
+  }
+  */
+
+
 .social-media-list li a {
-    color: #fff;
-}
+    color: white;
+  }
 
 .social-media-list li {
     position: relative; 
@@ -329,13 +330,15 @@ textarea {
     margin: 10px 3px;
     line-height: 60px;
     border-radius: 50%;
+    text-align: center;
+    font-size: 25px;
     color: #fff;
     background-color: rgb(27,27,27);
     cursor: pointer; 
     transition: all .2s ease-in-out;
 }
 
-.social-media-list li:after {
+.social-media-list li a:after {
     content: '';
     position: absolute;
     top: 0;
@@ -355,7 +358,7 @@ textarea {
 
 .social-media-list li:hover a {
     color: #000;
-}
+} 
 
 hr {
     border-color: rgba(255,255,255,.6);
