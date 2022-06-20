@@ -139,7 +139,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #656B68;
+    background-color: #737775;
     
 }
 
@@ -199,6 +199,7 @@ form * {
 input, textarea {
     outline: none;
     border: 1px solid #ddd;
+    font-family: 'Work Sans', sans-serif;
 }
 
 input:focus, textarea:focus {
@@ -213,7 +214,6 @@ form input {
 }
 
 textarea {
-    font-size: 1rem;;
     padding: 5px 6px;
 }
 
@@ -307,16 +307,6 @@ textarea {
     color: #fff;
     text-decoration: none;
 }
-
-/*#contact-icon {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-  }
-  */
-
 
 .social-media-list li a {
     color: white;
@@ -428,6 +418,6 @@ hr {
   
   @media screen and (max-width: 410px) {
     .send-button {
-      width: 99%;
+      width: 100%;
     }
   }

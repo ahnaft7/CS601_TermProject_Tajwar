@@ -32,7 +32,7 @@
         </div>
         <div class="maincont" id="contact">
           <div class="contact-wrapper">
-            <form id="contact-form" class="form-horizontal" id="contact-form" role="form">
+            <form id="contact-form" class="form-horizontal" id="contact-form" role="form" method="post" onsubmit="return validateForm();">
                 <div class="form-group">
                     <div class="col-sm-12">
                         <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
@@ -52,7 +52,7 @@
             </form>
             <div class="direct-contact-container">
                 <ul class="contact-list">
-                    <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Bronx, NY</span></i></li>
+                    <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">New York City</span></i></li>
                     <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-347-229-9703" title="Give me a call">(347) 229-9703</a></span></i></li>
                     <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:tajwara@bu.edu" title="Send me an email">tajwara@bu.edu</a></span></i></li>
                 </ul>
@@ -69,29 +69,6 @@
             </div>
           </div>
         </div>
-        <h3>Contact</h3>
-        <table>
-          <thead>
-                   <tr>
-                      <th>Contact Method</th>
-                      <th>Path</th>
-                   </tr>
-                </thead>
-                <tbody>
-                   <tr>
-                      <td>Email</td>
-                      <td><a href="mailto:tajwara@bu.edu">tajwara@bu.edu</a></td>
-                   </tr>
-                   <tr>
-                      <td>LinkedIn</td>
-                      <td><a href="https://www.linkedin.com/in/ahnaf-tajwar-baa014158/">Ahnaf Tajwar</a></td>
-                   </tr>
-                   <tr>
-                    <td>Phone</td>
-                    <td>347-229-9703</td>
-                 </tr>
-                </tbody>
-            </table>
     </main>
     <footer>
         <p>© Ahnaf Tajwar 2022</p>
