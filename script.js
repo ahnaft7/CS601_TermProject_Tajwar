@@ -6,11 +6,6 @@
   });
 */
 
-window.addEventListener('scroll', function(){
-  var header = document.querySelector('header');
-  header.classList.toggle('sticky', window.scrollY > 0);
-});
-
 function validateForm() {
     let name = document.getElementById("name");
     let letters = /^[A-Za-z]+$/;
