@@ -19,9 +19,10 @@ body.contactbody {
     background-color: rgb(91, 91, 91);
 }
 
+
 h1 {
-    font-size: 2.4rem;
-    margin: 0;
+    font-size: 2.5rem;
+    width: 350px;
 }
 
 .role {
@@ -47,7 +48,7 @@ nav a{
 
 header {
     background-color: #9EA5A2;
-    padding: 0.8em 0;
+    padding: 1em 0;
     box-shadow: 2px 2px 10px #777;
 }
 
@@ -91,7 +92,7 @@ footer {
     height: 2.5rem;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1400px) {
     .container {
         text-align: center;
     }
@@ -105,7 +106,7 @@ footer {
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 850px) {
     .container {
         text-align: center;
     }
@@ -190,6 +191,10 @@ footer {
     position: relative;
     max-width: 840px;
   }
+
+#contact-title {
+    color: #ddd
+}
 
 
 form * {
