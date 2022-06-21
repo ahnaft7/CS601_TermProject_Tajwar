@@ -1,8 +1,4 @@
 function validateForm() {
-  const btn = document.getElementById('btn');
-        btn.addEventListener('click', () => { 
-          btn.style.display = 'none';
-
     let name = document.getElementById("name");
     let letters = /^[A-Za-z]+$/;
     if (name.value.length < 2) {
@@ -15,5 +11,4 @@ function validateForm() {
     } else {
         return true;
     }
-  });
 }
