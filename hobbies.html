@@ -8,7 +8,9 @@
     <script src="script.js"></script>
   </head>
 
-  <body> 
+  <body>
+    <script src="https://unpkg.com/vue@3"></script>
+    <div id="app">
     <header>
       <div class="container container-nav">
         <div class="titles">
@@ -59,11 +61,10 @@
           <div class="work-2">
             <div class="work-2-d">
               <p class="work-text">
-                Photography has been something I was really interested in learning after seeing
-                so many cool photos online especially after Instagram became popular.
-                I recently purchased a DSLR camera and am always looking for an opportunity
-                to take it out and shoot. My next big purchase will be a video drone that I can
-                take on my next travel destination.
+                Traveling has been a big part of my goals recently, after I realized time isn't
+                waiting for anyone. Every year I plan to travel to at least one international destination
+                with family and friends. A life goal of mine is to travel to every country across the globe
+                at least once.
               </p>
             </div>
           </div>
@@ -73,24 +74,59 @@
           <div class="work-2">
             <div class="work-2-d">
               <p class="work-text">
-                Photography has been something I was really interested in learning after seeing
-                so many cool photos online especially after Instagram became popular.
-                I recently purchased a DSLR camera and am always looking for an opportunity
-                to take it out and shoot. My next big purchase will be a video drone that I can
-                take on my next travel destination.
+                Driving is incredibly fun to me, in contrast to a lot of you I'm sure.
+                I see driving as a way to de-stress and let my mind go where it wants.
+                I also just enjoy the aspect of controlling a vehicle to transport me somewhere.
+                This definitely must have influenced my mechanical background.
               </p>
             </div>
           </div>
           <div class="subtitle" id="travel-photos">
             <h2>Travel Photos and Videos</h2>
           </div>
-        <img height= "200" width="200" src="images/acadiaroad.jpg" alt="Mountain road" />
-        <img height= "200" width="200" src="images/forest.jpg" alt="Sunlight filled forest" />
-        <img height= "200" width="200" src="images/nyc.jpg" alt="Brooklyn Bridge" />
-        <br><video height= "200" width="200" src="videos/carsunset.mp4" controls></video>
+      
+        <div class="container-img">
+            <div class="images">
+              <div class="gallery">
+                <img height= "200" width="200" class="mountain" alt="Mountain road" src="images/acadiaroad.jpg" 
+                @mouseover="hover = true" @mouseleave="hover = false"/>
+                <div class="desc" v-if="hover">Mountain Road</div>
+              </div>
+              <div class="gallery">
+                <img height= "200" width="200" class="forest" alt="Sunlight filled forest" src="images/forest.jpg" 
+                @mouseover="hover = true" @mouseleave="hover = false"/>
+                <div class="desc" v-if="hover">Sunlight Filled Forest</div>
+              </div>
+              <div class="gallery">
+                <img height= "200" width="200" class="bridge" alt="Brooklyn Bridge" src="images/nyc.jpg" 
+                @mouseover="hover = true" @mouseleave="hover = false"/>
+                <div class="desc" v-if="hover">Brooklyn Bridge</div>
+              </div>
+              <div class="gallery">
+                <video height= "200" width="200" class="sunset" alt="Car sunset" src="videos/carsunset.mp4" controls 
+                @mouseover="hover = true" @mouseleave="hover = false"></video>
+                <div class="desc" v-if="hover">Car Sunset</div>
+              </div>
+            </div>
+        </div>  
+        </div>
     </main>
     <footer>
         <p>© Ahnaf Tajwar 2022</p>
     </footer>
+    </div>
+
+    <script>
+      const { createApp } = Vue
+
+      createApp({
+          data() {
+              return {
+                  hover: false
+              }
+          },
+       },
+      ).mount('#app')
+    </script>
   </body>
 </html>
