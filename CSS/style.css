@@ -259,6 +259,14 @@ div.desc {
     text-align: center;
 }
 
+.card {
+    display: flex;
+    justify-content: center;
+}
+
+.card #resume {
+    margin: auto;
+}
 
 #contact {
     width: 100%;
